@@ -10,12 +10,12 @@ SRC_FILES := $(wildcard $(SRC_DIR)/*.cpp)
 OBJ_FILES := $(patsubst $(SRC_DIR)/%.cpp,$(OBJ_DIR)/%.o,$(SRC_FILES))
 RELEASE_OBJ_FILES := $(patsubst $(SRC_DIR)/%.cpp,$(RELEASE_OBJ_DIR)/%.o,$(SRC_FILES))
 
-INCLUDE :=-I$(EXT_DIR)\SDL2-2.0.7\include \
+INCLUDE :=-I$(EXT_DIR)\SDL2-2.0.8\include \
 	-I$(EXT_DIR)\SDL2_image-2.0.2\include \
 	-I$(EXT_DIR)\SDL2_mixer-2.0.2\include \
 	-I$(EXT_DIR)\SDL2_ttf-2.0.14\include
 
-LIB :=-L$(EXT_DIR)\SDL2-2.0.7\lib\x64 \
+LIB :=-L$(EXT_DIR)\SDL2-2.0.8\lib\x64 \
 	-L$(EXT_DIR)\SDL2_image-2.0.2\lib\x64 \
 	-L$(EXT_DIR)\SDL2_mixer-2.0.2\lib\x64 \
 	-L$(EXT_DIR)\SDL2_ttf-2.0.14\lib\x64 
